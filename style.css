@@ -1,0 +1,61 @@
+.contact-info .media-thumb{
+        width: 60px; 
+        line-height: 60px;
+        background: #ccc;
+        font-size: 32px; 
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+      @media (min-width: 768px) {
+        .contact-v1 .contact-maps iframe,
+        .contact-v2 .contact-maps iframe{
+          width: 100vw;
+          position: absolute;
+          left: 0;
+        }
+        .contact-v2 .contact-info,
+        .contact-v4 .contact-info{
+          order: 2;
+          justify-content: flex-end;
+        }
+        .contact-v1 .card-contact,
+        .contact-v2 .card-contact{
+          z-index: 5;
+        }
+        .contact-v1 .contact-info,
+        .contact-v2 .contact-info{
+          display: flex;
+          align-items: center;
+          min-height: 600px;
+        }
+        .contact-v1 .contact-maps,
+        .contact-v2 .contact-maps{
+          position: inherit;
+        }
+        .contact-v3 .contact-maps iframe,
+        .contact-v4 .contact-maps iframe{
+          position: relative;
+          height: 400px;
+        }
+       
+        .contact-maps.collapse:not(.show){
+          display: block;
+        }
+      }
+      @media(max-width:767px){
+        .contact-maps iframe{
+          width: 100%;
+          position: relative;
+          left: 0;
+        }
+      }
+      @media(max-width:360px){
+        .contact-info .media{
+          display: block;
+          text-align: center;
+        }
+        .contact-info .media-thumb{
+          margin:0 auto 10px auto;
+        }
+      }
